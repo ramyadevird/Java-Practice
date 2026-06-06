@@ -1,4 +1,3 @@
-
 import java.util.Arrays;
 import java.util.Scanner;
 public class array {
@@ -6,7 +5,7 @@ public class array {
 	public static void main(String args[])
 	{
 	  // 1.Printing arrays 
-		int[] arr1 = new int[5];
+	    int[] arr1 = new int[5];
 		arr1[0]=25;
 		arr1[1]=14;
 		arr1[2]=27;
@@ -45,9 +44,41 @@ public class array {
 		
 		System.out.println();
 		
-		System.out.println(Arrays.toString(arr2));
+		System.out.println(Arrays.toString(arr2)); 
 		
-		System.out.println("Two Dimensional Array");
+		// 3. Java Utility Methods
 		
-
-}
+		int[] arr3= {52,78,98,69,35};
+		int[] arr4= {57,21,35,41,63};
+		
+		Arrays.sort(arr3);
+		System.out.println(Arrays.toString(arr3));
+		
+		int key=78;
+		int index=Arrays.binarySearch(arr3,78);
+		System.out.println("Index: " + index );
+		
+		
+		Arrays.fill(arr3,5);
+		System.out.println(Arrays.toString(arr3));
+		
+		System.out.println(Arrays.equals(arr3, arr4));
+		
+		int[] newArr = Arrays.copyOf(arr4,arr4.length);
+		System.out.println(Arrays.toString(newArr));
+		
+		
+		// 4. Passing Functions
+		
+		int[] arr5= { 15,45,75,69,25};
+		System.out.println(Arrays.toString(arr5));
+		change(arr5);
+		System.out.println(Arrays.toString(arr5));
+		
+	}
+		static void change(int[] arr)
+		{
+			arr[1]=58;
+		}
+		
+	}
