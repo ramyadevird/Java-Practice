@@ -47,7 +47,7 @@ public class array {
 		
 		System.out.println(Arrays.toString(arr2));
 		
+		System.out.println("Two Dimensional Array");
 		
-	}
 
 }
